@@ -406,8 +406,8 @@ html {
 
 body {
   color: #000;
-  background: #fff;
-  font: 16px/1.2 "Rubik", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  background: #3a454d;
+  font: 16px/1.2 "Roboto", sans-serif, "Rubik", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   min-width: 320px;
 }
 
@@ -428,11 +428,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 16px;
 }
 
 h3 {
@@ -452,12 +452,7 @@ h6 {
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .grid {
@@ -751,7 +746,7 @@ a:hover {
 }
 
 .card h2 {
-  font-size: 27px;
+  font-size: 16px;
   background-color: #292f36;
   color: #fff;
   margin: 0;
@@ -811,6 +806,7 @@ a:hover {
 .wrapper {
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .container {
@@ -843,7 +839,7 @@ a:hover {
     padding-bottom: 0;
     border: none;
     border-left: 8px solid #4e5a62;
-    padding-left: 17px;
+    padding-left: 15px;
   }
 }
 
@@ -854,6 +850,12 @@ a:hover {
   .row {
     flex-wrap: wrap;
     display: flex;
+    margin: -10px;
+  }
+}
+@media (min-width: 1024px) {
+  .row {
+    margin: -15px;
   }
 }
 .row .col {
