@@ -1,0 +1,89 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.heading {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+    @include media ('>=tablet') {
+        text-align: left;
+    }
+ }   
+
+.heading h1 {
+    color: $white;
+    border-bottom: 4px solid #4e5a62;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding-bottom: 9px;
+    margin-bottom: 0; 
+    
+    @include media ('>=desktop') {
+        padding-bottom: 0;
+        border: none;
+        border-left: 8px solid #4e5a62;
+        padding-left: 17px;
+    }
+}
+
+.row {
+    margin: 0  -15px;
+ 
+    @include media ('>=tablet') {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+    .col {
+    padding: 0 15px 26px;
+    
+    
+    @include media ('>=tablet') {
+        width: 33.33%;
+        padding: 10px;
+    }
+    
+    @include media ('>=desktop') {
+        padding: 15px;
+    }
+         }
+}
+
+
+
+
+
+
+
+// Обертка для полей формы
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+// Поля формы
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.form-control {
+	@include placeholder {
+		color: $red;
+	}
+
+	&:focus {
+		border-color: $yellow;
+	}
+}
